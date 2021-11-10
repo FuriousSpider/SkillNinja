@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="1e3" height="500" version="1.1" viewBox="0 0 264.58 132.29" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="linearGradient1185" x1="74.393" x2="74.393" y1="127.89" y2="11.875" gradientTransform="matrix(1.1228 0 0 1.2892 -16.25 -19.13)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#f00" offset="0"/>
+   <stop stop-color="#ffc600" offset="1"/>
+  </linearGradient>
+  <radialGradient id="radialGradient7120" cx="132.29" cy="66.146" r="132.29" gradientTransform="matrix(.50313 .86421 -1.2383 .7209 147.64 -95.867)" gradientUnits="userSpaceOnUse">
+   <stop offset="0"/>
+   <stop stop-color="#fff" offset="1"/>
+  </radialGradient>
+ </defs>
+ <path x="3.1833253" y="3.183327" width="258.21667" height="125.92502" d="m16.412 3.1833h231.76a13.229 13.229 45 0 1 13.229 13.229v99.467a13.229 13.229 135 0 1-13.229 13.229h-231.76a13.229 13.229 45 0 1-13.229-13.229v-99.467a13.229 13.229 135 0 1 13.229-13.229z" fill="url(#linearGradient1185)" fill-rule="evenodd" stroke="url(#radialGradient7120)" stroke-width="6.3666" style="paint-order:stroke markers fill"/>
+</svg>

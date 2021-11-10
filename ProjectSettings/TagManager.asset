@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Dagger
+  - LaserBase
+  - Laser
+  - Soldier
+  - Spikes
+  - Bomb
+  - BombExplosion
+  - Menu
+  - Ads
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - BG
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 3367436651
+    locked: 0
+  - name: Background2
+    uniqueID: 4122292395
+    locked: 0
+  - name: Background3
+    uniqueID: 3961857465
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Foreground
+    uniqueID: 344809525
+    locked: 0

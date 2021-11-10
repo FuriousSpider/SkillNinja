@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="1e4" height="1e4" version="1.1" viewBox="0 0 2645.8 2645.8" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <linearGradient id="linearGradient12697" x1="2056.7" x2="-2263.7" y1="-1856.7" y2="2623.7" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#00a" stop-opacity="0" offset="0"/>
+   <stop stop-color="#00a" stop-opacity="0" offset=".44047"/>
+   <stop stop-color="#000061" offset=".44491"/>
+   <stop stop-color="#00a" stop-opacity="0" offset=".45052"/>
+   <stop stop-color="#00a" stop-opacity="0" offset="1"/>
+  </linearGradient>
+ </defs>
+ <g transform="matrix(10.025 0 0 10.025 .35909 -4.1538)">
+  <rect x="-.039788" y=".46025" width="264.58" height="264.58" fill="url(#linearGradient12697)" fill-rule="evenodd" stroke-width=".27352" style="mix-blend-mode:normal"/>
+ </g>
+</svg>

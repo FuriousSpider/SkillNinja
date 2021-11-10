@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="100" height="100" version="1.1" viewBox="0 0 26.458 26.458" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <filter id="filter20404" x="-.19645" y="-.19645" width="1.3872" height="1.3872" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation="11.251947"/>
+  </filter>
+ </defs>
+ <path transform="matrix(.09692 0 0 .09692 -4.0665 -10.849)" d="m255.82 325.8-65.167-22.099-55.149 41.155 0.87947-68.807-56.183-39.732 65.711-20.426 20.426-65.711 39.732 56.183 68.807-0.87948-41.155 55.149z" fill="#ff0" fill-rule="evenodd" filter="url(#filter20404)" opacity=".3" stroke="#ff9f00" stroke-width="10.072"/>
+</svg>
