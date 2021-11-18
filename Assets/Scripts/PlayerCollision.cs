@@ -3,6 +3,10 @@ using UnityEngine.SceneManagement;
 
 public class PlayerCollision : MonoBehaviour
 {
+    public SpriteRenderer spriteRenderer;
+    public Sprite playerSprite;
+    public Sprite playerDeadSprite;
+
     public GameObject levelManager;
     public GameObject menu;
     public AudioClip[] audioClips;
@@ -48,12 +52,23 @@ public class PlayerCollision : MonoBehaviour
     }
 
     private void StopGame() {
-        if (!audioSource.isPlaying) {
-            audioSource.PlayOneShot(audioClips[Random.Range(0, audioClips.Length - 1)], 0.5f);
+        if (!isPlayerDead()) {
+            if (!audioSource.isPlaying) {
+                audioSource.PlayOneShot(audioClips[Random.Range(0, audioClips.Length - 1)], 0.5f);
+            }
+            spriteRenderer.sprite = playerDeadSprite;
+            MenuHandler menuHandler = menu.GetComponent<MenuHandler>();
+            menuHandler.Show();
+            LevelManager levelManagerScript = levelManager.GetComponent<LevelManager>();
+            levelManagerScript.StopGame();
         }
-        MenuHandler menuHandler = menu.GetComponent<MenuHandler>();
-        menuHandler.Show();
-        LevelManager levelManagerScript = levelManager.GetComponent<LevelManager>();
-        levelManagerScript.StopGame();
+    }
+
+    private bool isPlayerDead() {
+        return spriteRenderer.sprite == playerDeadSprite;
+    }
+
+    public void ResetPlayer() {
+        spriteRenderer.sprite = playerSprite;
     }
 }

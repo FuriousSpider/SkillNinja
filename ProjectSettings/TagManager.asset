@@ -13,6 +13,7 @@ TagManager:
   - BombExplosion
   - Menu
   - Ads
+  - OtherCamera
   layers:
   - Default
   - TransparentFX

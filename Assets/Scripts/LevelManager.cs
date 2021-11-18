@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
+    public GameObject player;
     public GameObject soldier;
     public GameObject dagger;
     public GameObject laserBase;
@@ -51,6 +52,7 @@ public class LevelManager : MonoBehaviour
         initSpawnTimer();
         initScore();
         removeInstantiatedEnemies();
+        resetPlayer();
         isGameActive = true;
     }
 
@@ -102,6 +104,10 @@ public class LevelManager : MonoBehaviour
         foreach(GameObject enemy in bombs) {
             Destroy(enemy);
         }
+    }
+
+    private void resetPlayer() {
+        player.GetComponent<PlayerCollision>().ResetPlayer();
     }
 
     private void calculateMapCoordinates() {
