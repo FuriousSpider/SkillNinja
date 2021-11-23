@@ -7,7 +7,6 @@ public class PlayerMovement : MonoBehaviour
 
     public float speed;
     public AudioClip[] audioClip;
-    public Camera secondaryCamera;
 
     AudioSource audioSource;
     Vector3 moveToPosition;
@@ -30,19 +29,19 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         if (Input.GetMouseButtonDown(0) && LevelManager.isGameActive) {
-            Vector3 mousePosition = secondaryCamera.ScreenToWorldPoint(Input.mousePosition);
+            Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-            if (mousePosition.x < map.GetMinX() + margin) {
-                mousePosition.x = map.GetMinX() + margin;
-            } else if (mousePosition.x > map.GetMaxX() - margin) {
-                mousePosition.x = map.GetMaxX() - margin;
-            }
+            // if (mousePosition.x < map.GetMinX() + margin) {
+            //     mousePosition.x = map.GetMinX() + margin;
+            // } else if (mousePosition.x > map.GetMaxX() - margin) {
+            //     mousePosition.x = map.GetMaxX() - margin;
+            // }
             
-            if (mousePosition.y < map.GetMinY() + margin) {
-                mousePosition.y = map.GetMinY() + margin;
-            } else if (mousePosition.y > map.GetMaxY() - margin) {
-                mousePosition.y = map.GetMaxY() - margin;
-            }
+            // if (mousePosition.y < map.GetMinY() + margin) {
+            //     mousePosition.y = map.GetMinY() + margin;
+            // } else if (mousePosition.y > map.GetMaxY() - margin) {
+            //     mousePosition.y = map.GetMaxY() - margin;
+            // }
 
             moveToPosition = mousePosition;
             moveToPosition.z = 0;
@@ -66,7 +65,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void calculateMapCoordinates() {
-        Camera camera = secondaryCamera;
+        Camera camera = Camera.main;
         Vector3 leftBottom = camera.ViewportToWorldPoint(new Vector3(0, 0, camera.nearClipPlane));
         Vector3 rightTop = camera.ViewportToWorldPoint(new Vector3(1, 1, camera.nearClipPlane));
 

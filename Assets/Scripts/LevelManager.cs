@@ -28,8 +28,6 @@ public class LevelManager : MonoBehaviour
         spawnZones = new Dictionary<Zone, long>();
         timeManager = new TimeManager(Values.ENEMY_SPAWN_INTERVAL_START, Values.ENEMY_SPAWN_INTERVAL_END);
 
-        calculateMapCoordinates();
-        generateSpawnZones();
         isGameActive = false;
         MenuHandler.INSTANCE.Enable();
         gameNumber = 0;
@@ -49,6 +47,9 @@ public class LevelManager : MonoBehaviour
     }
 
     public void StartGame() {
+        calculateMapCoordinates();
+        generateSpawnZones();
+
         initSpawnTimer();
         initScore();
         removeInstantiatedEnemies();
