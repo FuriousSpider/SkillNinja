@@ -14,10 +14,12 @@ public static class Values
     public const string TAG_ADS = "Ads";
 
     public const float MAP_MARGIN_PERCENTAGE = 10.0f;
+    public const float MAP_TOPBAR_OFFSET_PERCENTAGE = 15.0f;
 
     public const int MANAGER_SCREEN_MAIN_MENU = 0;
     public const int MANAGER_SCREEN_GAME = 1;
     public const int MANAGER_SCREEN_HELP = 2;
+    public const int MANAGER_SCREEN_LANGUAGE = 3;
 
     public const int ENEMY_SOLDIER_NUMBER_OF_LIVES = 3;
     public const long ENEMY_SOLDIER_IDLE_TIME = 2000;
@@ -30,7 +32,7 @@ public static class Values
     public const float ENEMY_LASER_BASE_BOTTOM_OFFSET = 0.5f;
     public const float ENEMY_LASER_BASE_LEFT_OFFSET = 0.2f;
     public const float ENEMY_LASER_BASE_RIGHT_OFFSET = 0.2f;
-    public const float ENEMY_LASER_BASE_LEFT_RIGHT_VERTICAL_OFFSET = 0.1f;
+    public const float ENEMY_LASER_BASE_LEFT_RIGHT_VERTICAL_OFFSET = 0.3f;
 
     public const long ENEMY_SPIKES_IDLE_TIME = 2000;
     public const long ENEMY_SPIKES_ACTIVE_TIME = 1000; 

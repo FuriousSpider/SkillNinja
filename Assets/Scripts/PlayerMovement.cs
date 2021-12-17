@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
 
     public float speed;
+    public Animator animator;
     public AudioClip[] audioClip;
 
     AudioSource audioSource;
@@ -31,17 +32,17 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && LevelManager.isGameActive) {
             Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-            // if (mousePosition.x < map.GetMinX() + margin) {
-            //     mousePosition.x = map.GetMinX() + margin;
-            // } else if (mousePosition.x > map.GetMaxX() - margin) {
-            //     mousePosition.x = map.GetMaxX() - margin;
-            // }
+            if (mousePosition.x < map.GetMinX() + margin) {
+                mousePosition.x = map.GetMinX() + margin;
+            } else if (mousePosition.x > map.GetMaxX() - margin) {
+                mousePosition.x = map.GetMaxX() - margin;
+            }
             
-            // if (mousePosition.y < map.GetMinY() + margin) {
-            //     mousePosition.y = map.GetMinY() + margin;
-            // } else if (mousePosition.y > map.GetMaxY() - margin) {
-            //     mousePosition.y = map.GetMaxY() - margin;
-            // }
+            if (mousePosition.y < map.GetMinY() + margin) {
+                mousePosition.y = map.GetMinY() + margin;
+            } else if (mousePosition.y > map.GetMaxY() - margin) {
+                mousePosition.y = map.GetMaxY() - margin;
+            }
 
             moveToPosition = mousePosition;
             moveToPosition.z = 0;
@@ -70,6 +71,8 @@ public class PlayerMovement : MonoBehaviour
         Vector3 rightTop = camera.ViewportToWorldPoint(new Vector3(1, 1, camera.nearClipPlane));
 
         map = new Zone(leftBottom.x, rightTop.x, leftBottom.y, rightTop.y);
+        float topOffset = map.GetHeight() * Values.MAP_TOPBAR_OFFSET_PERCENTAGE / 100;
+        map = new Zone(leftBottom.x, rightTop.x, leftBottom.y, rightTop.y - topOffset);
 
         margin = map.GetWidth() * Values.MAP_MARGIN_PERCENTAGE / 100;
     }
@@ -83,5 +86,10 @@ public class PlayerMovement : MonoBehaviour
         moveToPosition = transform.position;
         
         calculateMapCoordinates();
+        animator.SetBool("isDead", false);
+    }
+
+    public void StartPlayerMovement() {
+        animator.SetBool("isMoving", true);
     }
 }

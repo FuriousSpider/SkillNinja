@@ -8,21 +8,35 @@ public class MusicButtonHandler : MonoBehaviour, IPointerClickHandler
 {
     public Sprite musicImg;
     public Sprite noMusicImg;
-    
+
+    static List<MusicButtonHandler> buttonsList = new List<MusicButtonHandler>();
+
     Image image;
 
     // Start is called before the first frame update
     void Start()
     {
+        buttonsList.Add(this);
+
+        //TODO: add music to PlayerPrefs and change music to something different
         image = gameObject.GetComponent<Image>();
-        image.sprite = musicImg;
+
+        if (PlayerPrefsHandler.IsMusicPlaying()) {
+            image.sprite = musicImg;
+        } else {
+            image.sprite = noMusicImg;
+        }
     }
 
     public void onButtonClick(bool isMusicOn) {
         if (isMusicOn) {
-            image.sprite = musicImg;
+            foreach (MusicButtonHandler handler in buttonsList) {
+                handler.image.sprite = musicImg;
+            }
         } else {
-            image.sprite = noMusicImg;
+            foreach (MusicButtonHandler handler in buttonsList) {
+                handler.image.sprite = noMusicImg;
+            }
         }
     }
 
@@ -30,5 +44,10 @@ public class MusicButtonHandler : MonoBehaviour, IPointerClickHandler
     {
         MusicHandler.switchMusic();
         onButtonClick(MusicHandler.isMusicOn);
+        if (MusicHandler.isMusicOn) {
+            PlayerPrefsHandler.SetMusic(PlayerPrefsHandler.PREF_MUSIC_ON);
+        } else {
+            PlayerPrefsHandler.SetMusic(PlayerPrefsHandler.PREF_MUSIC_OFF);
+        }
     }
 }

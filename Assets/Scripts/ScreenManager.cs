@@ -11,6 +11,7 @@ public class ScreenManager : MonoBehaviour
     public GameObject mainMenuPoint;
     public GameObject gamePoint;
     public GameObject helpPoint;
+    public GameObject languageSelectorPoint;
 
     Vector3 destination;
 
@@ -37,6 +38,9 @@ public class ScreenManager : MonoBehaviour
             case Values.MANAGER_SCREEN_HELP:
                 destination = helpPoint.transform.position;
                 break;
+            case Values.MANAGER_SCREEN_LANGUAGE:
+                destination = languageSelectorPoint.transform.position;
+                break;
         }
     }
 
@@ -50,5 +54,9 @@ public class ScreenManager : MonoBehaviour
 
     public void GoToHelpScreen() {
         GoToScreen(Values.MANAGER_SCREEN_HELP);
+    }
+
+    public void GoToLanguageSelectorScreen() {
+        GoToScreen(Values.MANAGER_SCREEN_LANGUAGE);
     }
 }

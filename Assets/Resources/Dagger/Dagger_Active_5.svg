@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1000"
+   height="1000"
+   viewBox="0 0 264.58333 264.58334"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="Dagger_Active_5.svg"
+   inkscape:export-filename="D:\UnityProjects\Skill - Ninja\Assets\Resources\Dagger\Dagger_Active_4.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     inkscape:zoom="0.5"
+     inkscape:cx="348"
+     inkscape:cy="489"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path974"
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.66988;paint-order:stroke markers fill"
+       inkscape:transform-center-x="-6.8383041"
+       inkscape:transform-center-y="5.3467716"
+       d="M 189.06581,-3.7759488 131.36877,42.591971 a 25.135414,25.135414 0 0 1 2.93505,27.285946 25.135414,25.135414 0 0 1 -33.80706,10.98458 A 25.135414,25.135414 0 0 1 89.042435,48.381451 L 26.034608,28.852446 48.422161,95.481512 A 25.135415,25.135415 0 0 1 68.90458,96.242052 25.135415,25.135415 0 0 1 79.88916,130.04911 25.135415,25.135415 0 0 1 46.0821,141.03369 25.135415,25.135415 0 0 1 42.067661,138.1171 L 0.39666582,197.04113 72.977687,193.35494 a 25.135416,25.135416 0 0 1 2.290799,-15.77279 25.135416,25.135416 0 0 1 33.807054,-10.98458 25.135416,25.135416 0 0 1 10.98458,33.80706 25.135416,25.135416 0 0 1 -12.52464,11.48519 l 40.04758,56.46946 20.07412,-67.2307 a 25.135416,25.135416 0 0 1 -10.66579,-33.57561 25.135416,25.135416 0 0 1 33.80707,-10.98458 25.135416,25.135416 0 0 1 10.48362,10.1091 l 62.90459,-22.42992 -52.57574,-36.11822 A 25.135415,25.135415 0 0 1 177.83026,119.07808 25.135415,25.135415 0 0 1 166.84568,85.271028 25.135415,25.135415 0 0 1 188.20877,71.856144 Z M 138.66956,102.6881 a 25.135415,25.135415 0 0 1 10.98458,33.80706 25.135415,25.135415 0 0 1 -33.80707,10.98458 25.135415,25.135415 0 0 1 -10.98456,-33.80706 25.135415,25.135415 0 0 1 33.80705,-10.98458 z" />
+  </g>
+</svg>

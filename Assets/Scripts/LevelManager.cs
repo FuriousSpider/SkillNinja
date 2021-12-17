@@ -52,13 +52,13 @@ public class LevelManager : MonoBehaviour
 
         initSpawnTimer();
         initScore();
-        removeInstantiatedEnemies();
-        resetPlayer();
+        resetPlayerAndStartGame();
         isGameActive = true;
     }
 
     public void StopGame() {
         isGameActive = false;
+        removeInstantiatedEnemies();
         gameNumber++;
 
         if (gameNumber % 7 - 3 == 0) {
@@ -107,8 +107,12 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    private void resetPlayer() {
-        player.GetComponent<PlayerCollision>().ResetPlayer();
+    private void resetPlayerAndStartGame() {
+        PlayerCollision playerCollision = player.GetComponent<PlayerCollision>();
+        playerCollision.ResetPlayer();
+        PlayerMovement playerMovement = player.GetComponent<PlayerMovement>();
+        playerMovement.ResetPlayer();
+        playerMovement.StartPlayerMovement();
     }
 
     private void calculateMapCoordinates() {
@@ -117,11 +121,14 @@ public class LevelManager : MonoBehaviour
         Vector3 rightTop = camera.ViewportToWorldPoint(new Vector3(1, 1, camera.nearClipPlane));
 
         map = new Zone(leftBottom.x, rightTop.x, leftBottom.y, rightTop.y);
+        float topOffset = map.GetHeight() * Values.MAP_TOPBAR_OFFSET_PERCENTAGE / 100;
+        map = new Zone(leftBottom.x, rightTop.x, leftBottom.y, rightTop.y - topOffset);
 
         margin = map.GetWidth() * Values.MAP_MARGIN_PERCENTAGE / 100;
     }
 
     private void generateSpawnZones() {
+        spawnZones = new Dictionary<Zone, long>();
         spawnZones.Add(new Zone(map.GetMinX() + margin, map.GetMaxX() - margin, map.GetYByFraction(3f/4f), map.GetMaxY() - margin), Utils.GetCurrentTime());
         spawnZones.Add(new Zone(map.GetMinX() + margin, map.GetHorizontalCenter(), map.GetYByFraction(1f/4f), map.GetYByFraction(3f/4f)), Utils.GetCurrentTime());
         spawnZones.Add(new Zone(map.GetHorizontalCenter(), map.GetMaxX() - margin, map.GetYByFraction(1f/4f), map.GetYByFraction(3f/4f)), Utils.GetCurrentTime());

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1e3"
+   height="500"
+   version="1.1"
+   viewBox="0 0 264.58 132.29"
+   id="svg20"
+   sodipodi:docname="ButtonReturnHighlighted.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview22"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="0.79337381"
+     inkscape:cx="511.7386"
+     inkscape:cy="247.67644"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg20" />
+  <defs
+     id="defs12">
+    <linearGradient
+       id="linearGradient7723"
+       x1="129.33"
+       x2="129.33"
+       y1="184.91"
+       y2="9.9952"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0481743,0,0,1.0882207,-8.024907,-4.5550634)">
+      <stop
+         stop-color="#ff7f2a"
+         offset="0"
+         id="stop2"
+         style="stop-color:#001800;stop-opacity:1" />
+      <stop
+         stop-color="#ff0"
+         offset="1"
+         id="stop4"
+         style="stop-color:#00b200;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient
+       id="radialGradient12978"
+       cx="133.86"
+       cy="64.969002"
+       r="126.16"
+       gradientTransform="matrix(-0.0367837,0.86025415,-1.5982557,-0.11308387,241.04537,-41.660443)"
+       gradientUnits="userSpaceOnUse"
+       fx="133.86"
+       fy="64.969002">
+      <stop
+         offset="0"
+         id="stop7" />
+      <stop
+         stop-color="#fff"
+         offset="1"
+         id="stop9" />
+    </radialGradient>
+  </defs>
+  <path
+     x="10.352163"
+     y="6.7824521"
+     width="247.02403"
+     height="116.3726"
+     d="M 16.692093,2.8257937 H 247.8879 a 13.866298,14.396071 0 0 1 13.8663,14.3960713 v 97.846275 a 13.866298,14.396071 0 0 1 -13.8663,14.39607 H 16.692093 A 13.866298,14.396071 0 0 1 2.8257937,115.06814 V 17.221865 A 13.866298,14.396071 0 0 1 16.692093,2.8257937 Z"
+     fill="url(#linearGradient7723)"
+     stroke="url(#radialGradient12978)"
+     style="fill:url(#linearGradient7723);fill-rule:evenodd;stroke:url(#radialGradient12978);stroke-width:5.65159;paint-order:stroke markers fill"
+     id="path16" />
+</svg>

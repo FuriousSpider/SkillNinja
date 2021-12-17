@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1000"
+   height="1000"
+   viewBox="0 0 264.58333 264.58334"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="Dagger_Active_2.svg"
+   inkscape:export-filename="D:\UnityProjects\Skill - Ninja\Assets\Resources\Dagger\Dagger_Active_1.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     inkscape:zoom="0.5"
+     inkscape:cx="348"
+     inkscape:cy="489"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path974"
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.53183;paint-order:stroke markers fill"
+       inkscape:transform-center-x="-6.2124729"
+       inkscape:transform-center-y="-8.1628052"
+       d="M 552.50391 -13.326172 L 399.26367 220.73242 A 94.999994 94.999994 0 0 1 441.68164 315.38477 A 94.999994 94.999994 0 0 1 332.99023 394.35352 A 94.999994 94.999994 0 0 1 253.88086 290.97656 L 4.5878906 294.36914 L 162.88086 507.72266 A 94.999997 94.999997 0 0 1 237.39453 486.53516 A 94.999997 94.999997 0 0 1 316.36328 595.22656 A 94.999997 94.999997 0 0 1 207.67188 674.19531 A 94.999997 94.999997 0 0 1 189.83398 668.40039 L 108.86523 928.875 L 365.45703 830.85352 A 94.999997 94.999997 0 0 1 355.26953 771.48242 A 94.999997 94.999997 0 0 1 463.96094 692.51367 A 94.999997 94.999997 0 0 1 542.92969 801.20508 A 94.999997 94.999997 0 0 1 511.32422 857.11719 L 721.22852 1013.3262 L 713.83594 705.4043 A 94.999998 94.999998 0 0 1 679 632 A 94.999998 94.999998 0 0 1 774 537 A 94.999998 94.999998 0 0 1 832.10742 556.88867 L 995.41211 431.01562 L 764.24219 362.5918 A 94.999994 94.999994 0 0 1 655.60352 441.40039 A 94.999994 94.999994 0 0 1 576.63281 332.70898 A 94.999994 94.999994 0 0 1 637.75586 259.53906 L 552.50391 -13.326172 z M 481.54492 427.05664 A 94.999994 94.999994 0 0 1 495.69531 428.22461 A 94.999994 94.999994 0 0 1 574.66406 536.91602 A 94.999994 94.999994 0 0 1 465.97266 615.88477 A 94.999994 94.999994 0 0 1 387.00391 507.19336 A 94.999994 94.999994 0 0 1 481.54492 427.05664 z "
+       transform="scale(0.26458333)" />
+  </g>
+</svg>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1000"
+   height="1000"
+   viewBox="0 0 264.58333 264.58334"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="Dagger_Active_1.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     inkscape:zoom="0.5"
+     inkscape:cx="348"
+     inkscape:cy="489"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path974"
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.53183;paint-order:stroke markers fill"
+       inkscape:transform-center-x="0.8241377"
+       inkscape:transform-center-y="-13.060907"
+       d="M 493.03516 0 L 378.29688 255.14844 A 94.999993 94.999993 0 0 1 435 342 A 94.999993 94.999993 0 0 1 340 437 A 94.999993 94.999993 0 0 1 245.69336 347.27148 L 0 389.61914 L 189.71875 575.58398 A 94.999996 94.999996 0 0 1 260 543 A 94.999996 94.999996 0 0 1 355 638 A 94.999996 94.999996 0 0 1 260 733 A 94.999996 94.999996 0 0 1 241.47656 730.06641 L 202.25195 1000 L 440.34961 863.04688 A 94.999997 94.999997 0 0 1 421 806 A 94.999997 94.999997 0 0 1 516 711 A 94.999997 94.999997 0 0 1 611 806 A 94.999997 94.999997 0 0 1 588.5293 866.16797 L 820.28711 987.61719 L 772.5293 726.76758 A 94.999998 94.999998 0 0 1 679 632 A 94.999998 94.999998 0 0 1 774 537 A 94.999998 94.999998 0 0 1 826.65039 553.05469 L 1000 369.58398 L 760.97266 338.16602 A 94.999994 94.999994 0 0 1 666 433 A 94.999994 94.999994 0 0 1 571 338 A 94.999994 94.999994 0 0 1 619.92383 256.16797 L 493.03516 0 z M 506 445 A 94.999995 94.999995 0 0 1 601 540 A 94.999995 94.999995 0 0 1 506 635 A 94.999995 94.999995 0 0 1 411 540 A 94.999995 94.999995 0 0 1 506 445 z "
+       transform="scale(0.26458333)" />
+  </g>
+</svg>

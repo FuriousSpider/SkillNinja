@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1000"
+   height="1000"
+   viewBox="0 0 264.58333 264.58334"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="Dagger_Active_7.svg"
+   inkscape:export-filename="D:\UnityProjects\Skill - Ninja\Assets\Resources\Dagger\Dagger_Active_4.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     inkscape:zoom="0.5"
+     inkscape:cx="348"
+     inkscape:cy="489"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path974"
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.66988;paint-order:stroke markers fill"
+       inkscape:transform-center-x="13.612117"
+       inkscape:transform-center-y="1.7558177"
+       d="m 261.92891,42.942173 -72.45903,15.120213 a 25.135414,25.135414 0 0 1 -9.77241,25.644441 25.135414,25.135414 0 0 1 -35.10922,-5.560755 25.135414,25.135414 0 0 1 4.54021,-34.140978 L 101.85406,-2.0003305 91.552557,67.530338 a 25.135415,25.135415 0 0 1 17.904693,9.97647 25.135415,25.135415 0 0 1 -5.56075,35.109202 25.135415,25.135415 0 0 1 -35.109207,-5.56076 25.135415,25.135415 0 0 1 -2.252787,-4.42121 L 2.6544255,136.21749 68.998084,165.88417 a 25.135416,25.135416 0 0 1 9.201813,-13.01365 25.135416,25.135416 0 0 1 35.109203,5.56074 25.135416,25.135416 0 0 1 -5.56075,35.10921 25.135416,25.135416 0 0 1 -16.373706,4.54731 l 10.046046,68.49588 48.40828,-50.78953 a 25.135416,25.135416 0 0 1 5.73972,-34.75827 25.135416,25.135416 0 0 1 35.10922,5.56077 25.135416,25.135416 0 0 1 4.75154,13.76673 l 66.23137,8.57289 -30.44801,-56.05046 a 25.135415,25.135415 0 0 1 -35.06942,-5.58068 25.135415,25.135415 0 0 1 5.56075,-35.10919 25.135415,25.135415 0 0 1 25.12489,-2.25411 z m -93.23705,71.980737 a 25.135415,25.135415 0 0 1 -5.56075,35.10921 25.135415,25.135415 0 0 1 -35.10922,-5.56076 25.135415,25.135415 0 0 1 5.56077,-35.1092 25.135415,25.135415 0 0 1 35.1092,5.56075 z"
+       inkscape:export-filename="D:\UnityProjects\Skill - Ninja\Assets\Resources\Dagger\Dagger_Active_6.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+</svg>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1000"
+   height="1000"
+   viewBox="0 0 264.58333 264.58334"
+   version="1.1"
+   id="svg8524"
+   sodipodi:docname="Laser_Base_Idle_3.svg"
+   inkscape:export-filename="D:\UnityProjects\Skill - Ninja\Assets\Resources\Laser\Laser_Base_Idle_4.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview8526"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     inkscape:zoom="0.71621132"
+     inkscape:cx="456.56916"
+     inkscape:cy="806.32627"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs8521">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient14946">
+      <stop
+         style="stop-color:#646464;stop-opacity:1"
+         offset="0"
+         id="stop14942" />
+      <stop
+         style="stop-color:#c8c8c8;stop-opacity:1"
+         offset="1"
+         id="stop14944" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient14946"
+       id="linearGradient13426"
+       x1="44.129555"
+       y1="229.88942"
+       x2="220.83028"
+       y2="229.88942"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.682472,0,0,0.682472,42.006313,72.769628)" />
+  </defs>
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="fill:#de5e00;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       id="path73455"
+       cx="132.29167"
+       cy="229.17548"
+       r="9.9743605" />
+    <path
+       id="rect8607"
+       style="fill:url(#linearGradient13426);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.72989;paint-order:stroke markers fill"
+       d="M 73.944009,251.95421 H 190.63933 L 176.98972,206.39674 H 87.593391 Z"
+       sodipodi:nodetypes="ccccc" />
+  </g>
+</svg>

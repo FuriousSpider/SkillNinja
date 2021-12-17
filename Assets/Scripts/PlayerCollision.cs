@@ -3,18 +3,18 @@ using UnityEngine.SceneManagement;
 
 public class PlayerCollision : MonoBehaviour
 {
-    public SpriteRenderer spriteRenderer;
-    public Sprite playerSprite;
-    public Sprite playerDeadSprite;
-
     public GameObject levelManager;
     public GameObject menu;
+    public Animator animator;
     public AudioClip[] audioClips;
 
     AudioSource audioSource;
 
+    bool isPlayerDead;
+
     void Start() {
         audioSource = gameObject.AddComponent<AudioSource>();
+        isPlayerDead = false;
     }
 
     void OnTriggerEnter2D(Collider2D col) {
@@ -52,23 +52,25 @@ public class PlayerCollision : MonoBehaviour
     }
 
     private void StopGame() {
-        if (!isPlayerDead()) {
+        if (!IsPlayerDead()) {
+            isPlayerDead = true;
             if (!audioSource.isPlaying) {
                 audioSource.PlayOneShot(audioClips[Random.Range(0, audioClips.Length - 1)], 0.5f);
             }
-            spriteRenderer.sprite = playerDeadSprite;
             MenuHandler menuHandler = menu.GetComponent<MenuHandler>();
             menuHandler.Show();
             LevelManager levelManagerScript = levelManager.GetComponent<LevelManager>();
             levelManagerScript.StopGame();
+            animator.SetBool("isDead", true);
         }
     }
 
-    private bool isPlayerDead() {
-        return spriteRenderer.sprite == playerDeadSprite;
+    private bool IsPlayerDead() {
+        return isPlayerDead;
     }
 
     public void ResetPlayer() {
-        spriteRenderer.sprite = playerSprite;
+        animator.SetBool("isDead", false);
+        isPlayerDead = false;
     }
 }

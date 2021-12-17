@@ -9,19 +9,22 @@ public class ScoreHandler : MonoBehaviour
     [TextArea]
     public string scoreText;
 
-    Text text;
+    TMPro.TextMeshProUGUI text;
+    string textValue;
 
     void Start()
     {
-        text = GetComponent<Text>();
+        text = GetComponent<TMPro.TextMeshProUGUI>();
     }
 
     void Update()
-    {
+    {   
         if (score == 0) {
-            text.text = "";
+            text.enabled = false;
         } else {
-            text.text = scoreText + score;
+            text.enabled = true;
+            textValue = text.text.Split(":")[0] + ": ";
+            text.text = textValue + score;
         }
     }
 }

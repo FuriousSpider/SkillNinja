@@ -13,22 +13,20 @@ public class MusicHandler : MonoBehaviour
     void Start()
     {
         audioSource = gameObject.AddComponent<AudioSource>();
-        isMusicOn = true;
+        isMusicOn = PlayerPrefsHandler.IsMusicPlaying();
     }
 
     // Update is called once per frame
     void Update()
     {
         if (!audioSource.isPlaying) {
-            if (isMusicOn) {
-                audioSource.PlayOneShot(audioClip, 0.2f);
-            } else {
-                audioSource.PlayOneShot(audioClip, 0.0f);
-            }
-        } else if (!isMusicOn) {
+            audioSource.PlayOneShot(audioClip, 0.3f);
+        }
+        
+        if (!isMusicOn) {
             audioSource.volume = 0.0f;
         } else if (isMusicOn) {
-            audioSource.volume = 0.2f;
+            audioSource.volume = 0.3f;
         }
     }
 

@@ -36,6 +36,10 @@ public class Zone
         return maxX - minX;
     }
 
+    public float GetHeight() {
+        return maxY - minY;
+    }
+
     public float GetHorizontalCenter() {
         return (maxX + minX) / 2;
     }
