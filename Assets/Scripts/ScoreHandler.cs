@@ -8,6 +8,7 @@ public class ScoreHandler : MonoBehaviour
     public static long score;
     [TextArea]
     public string scoreText;
+    public bool hideWhenScoreZero;
 
     TMPro.TextMeshProUGUI text;
     string textValue;
@@ -19,12 +20,20 @@ public class ScoreHandler : MonoBehaviour
 
     void Update()
     {   
-        if (score == 0) {
-            text.enabled = false;
+        if (score == 0 && hideWhenScoreZero) {
+            Hide();
         } else {
-            text.enabled = true;
+            Show();
             textValue = text.text.Split(":")[0] + ": ";
-            text.text = textValue + score;
+            text.text = textValue + (score / 1000);
         }
+    }
+
+    private void Hide() {
+        gameObject.transform.localScale = new Vector3(0, 0, 0);
+    }
+
+    private void Show() {
+        gameObject.transform.localScale = new Vector3(1, 1, 1);
     }
 }

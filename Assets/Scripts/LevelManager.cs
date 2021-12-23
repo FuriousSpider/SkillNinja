@@ -52,6 +52,7 @@ public class LevelManager : MonoBehaviour
 
         initSpawnTimer();
         initScore();
+        ResetScore();
         resetPlayerAndStartGame();
         isGameActive = true;
     }
@@ -59,9 +60,10 @@ public class LevelManager : MonoBehaviour
     public void StopGame() {
         isGameActive = false;
         removeInstantiatedEnemies();
+        setNewBestScore();
         gameNumber++;
 
-        if (gameNumber % 7 - 3 == 0) {
+        if (gameNumber % 5 - 2 == 0) {
             MenuHandler.INSTANCE.Disable();
             AdsManager.INSTANCE.ShowInterstitialAd();
         }
@@ -211,8 +213,17 @@ public class LevelManager : MonoBehaviour
         return list;
     }
 
+    private void ResetScore() {
+        ScoreHandler.score = 0;
+    }
+
     private void CalculateScore() {
-        ScoreHandler.score = (timeManager.Now() - startTime) / 1000;
+        ScoreHandler.score += (long) (Time.deltaTime * 1000);
+        //(timeManager.Now() - startTime) / 1000;
+    }
+
+    private void setNewBestScore() {
+        PlayerPrefsHandler.SetBestScore((int) (ScoreHandler.score / 1000 % System.Int32.MaxValue));
     }
 
     private void OnAdFinished() {

@@ -1,15 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Localization;
-using UnityEngine.Localization.Settings;
 
 public class LanguageHandler : MonoBehaviour
 {
 
     private static List<Data> items = new List<Data>();
 
+    [TextArea]
     public string textEnglish;
+    [TextArea]
     public string textPolish;
     public bool isManager;
 

@@ -20,6 +20,11 @@ public static class Values
     public const int MANAGER_SCREEN_GAME = 1;
     public const int MANAGER_SCREEN_HELP = 2;
     public const int MANAGER_SCREEN_LANGUAGE = 3;
+    public const int MANAGER_SCREEN_SETTINGS = 4;
+    public const int MANAGER_SCREEN_HELP_STEP_2 = 5;
+    public const int MANAGER_SCREEN_HELP_STEP_3 = 6;
+    public const int MANAGER_SCREEN_HELP_STEP_4 = 7;
+    public const int MANAGER_SCREEN_HELP_STEP_5 = 8;
 
     public const int ENEMY_SOLDIER_NUMBER_OF_LIVES = 3;
     public const long ENEMY_SOLDIER_IDLE_TIME = 2000;
@@ -45,4 +50,7 @@ public static class Values
     public const int ENEMY_SPAWN_INTERVAL_STEP = 200;
 
     public const long TIME_NULL = 0;
+
+    public const float MUSIC_MAX_VOLUME = 0.3f;
+    public const float SOUNDS_MAX_VOLUME = 1.0f;
 }

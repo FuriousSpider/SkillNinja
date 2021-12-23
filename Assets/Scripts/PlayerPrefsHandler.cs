@@ -18,18 +18,42 @@ public class PlayerPrefsHandler : MonoBehaviour
         return !PlayerPrefs.HasKey(PREF_LANGUAGE) || PlayerPrefs.GetInt(PREF_LANGUAGE) == PREF_LANGUAGE_ENGLISH;
     }
 
-    public void SetBestScore(int score) {
+    public static void SetBestScore(int score) {
         if (!PlayerPrefs.HasKey(PREF_SCORE) || PlayerPrefs.GetInt(PREF_SCORE) < score) {
             PlayerPrefs.SetInt(PREF_SCORE, score);
         }
     }
 
-    public static void SetMusic(int isMusicPlaying) {
-        PlayerPrefs.SetInt(PREF_MUSIC, isMusicPlaying);
+    public static int GetBestScore() {
+        if (!PlayerPrefs.HasKey(PREF_SCORE)) {
+            return 0;
+        } else {
+            return PlayerPrefs.GetInt(PREF_SCORE);
+        }
     }
 
-    public static bool IsMusicPlaying() {
-        return !PlayerPrefs.HasKey(PREF_MUSIC) || PlayerPrefs.GetInt(PREF_MUSIC) == PREF_MUSIC_ON;
+    public static void SetMusic(float musicVolume) {
+        PlayerPrefs.SetFloat(PREF_MUSIC, musicVolume);
+    }
+
+    public static float GetMusicVolume() {
+        if (!PlayerPrefs.HasKey(PREF_MUSIC)) {
+            return Values.MUSIC_MAX_VOLUME;
+        } else {
+            return PlayerPrefs.GetFloat(PREF_MUSIC);
+        }
+    }
+
+    public static void SetSounds(float soundsVolume) {
+        PlayerPrefs.SetFloat(PREF_SOUNDS, soundsVolume);
+    }
+
+    public static float GetSoundsVolume() {
+        if (!PlayerPrefs.HasKey(PREF_SOUNDS)) {
+            return Values.SOUNDS_MAX_VOLUME;
+        } else {
+            return PlayerPrefs.GetFloat(PREF_SOUNDS);
+        }
     }
 
     public const string PREF_LANGUAGE = "Language";
@@ -39,6 +63,5 @@ public class PlayerPrefsHandler : MonoBehaviour
     public const string PREF_SCORE = "Score";
 
     public const string PREF_MUSIC = "Music";
-    public const int PREF_MUSIC_ON = 0;
-    public const int PREF_MUSIC_OFF = 1;
+    public const string PREF_SOUNDS = "Sounds";
 }

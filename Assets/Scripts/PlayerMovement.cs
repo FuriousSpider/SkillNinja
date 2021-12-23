@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     bool facingLeft;
     Zone map;
     float margin;
+    float volume;
 
     void Start()
     {
@@ -51,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
         }
         
         if (!IsDestinationReached() && !audioSource.isPlaying) {
-            audioSource.PlayOneShot(audioClip[Random.Range(0, audioClip.Length - 1)], 0.5f);
+            audioSource.PlayOneShot(audioClip[Random.Range(0, audioClip.Length - 1)], volume * 0.5f);
         }
     }
 
@@ -87,6 +88,7 @@ public class PlayerMovement : MonoBehaviour
         
         calculateMapCoordinates();
         animator.SetBool("isDead", false);
+        volume = PlayerPrefsHandler.GetSoundsVolume();
     }
 
     public void StartPlayerMovement() {

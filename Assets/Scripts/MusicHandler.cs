@@ -4,33 +4,30 @@ using UnityEngine;
 
 public class MusicHandler : MonoBehaviour
 {
-    public static bool isMusicOn;
     public AudioClip audioClip;
 
-    AudioSource audioSource;
+    static AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
     {
         audioSource = gameObject.AddComponent<AudioSource>();
-        isMusicOn = PlayerPrefsHandler.IsMusicPlaying();
     }
 
     // Update is called once per frame
     void Update()
     {
         if (!audioSource.isPlaying) {
-            audioSource.PlayOneShot(audioClip, 0.3f);
-        }
-        
-        if (!isMusicOn) {
-            audioSource.volume = 0.0f;
-        } else if (isMusicOn) {
-            audioSource.volume = 0.3f;
+            float volume = PlayerPrefsHandler.GetMusicVolume();
+            audioSource.PlayOneShot(audioClip, Values.MUSIC_MAX_VOLUME);
+            audioSource.volume = volume;
         }
     }
 
-    public static void switchMusic() {
-        isMusicOn = !isMusicOn;
+    public static void UpdateMusic(float musicVolume) {
+        PlayerPrefsHandler.SetMusic(musicVolume);
+        if (audioSource != null) {
+            audioSource.volume = musicVolume;
+        }
     }
 }

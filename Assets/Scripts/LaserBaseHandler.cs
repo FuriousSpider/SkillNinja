@@ -12,12 +12,14 @@ public class LaserBaseHandler : MonoBehaviour
     State state;
     TimeManager timeManager;
     List<GameObject> lasersList;
+    float volume;
 
     // Start is called before the first frame update
     void Start()
     {
         audioSource = gameObject.AddComponent<AudioSource>();
         state = State.IDLE;
+        volume = PlayerPrefsHandler.GetSoundsVolume();
         timeManager = new TimeManager(Values.ENEMY_LASER_IDLE_TIME, Values.ENEMY_LASER_IDLE_TIME);
         lasersList = new List<GameObject>();
 
@@ -45,9 +47,9 @@ public class LaserBaseHandler : MonoBehaviour
         }
 
         if (!audioSource.isPlaying && state == State.ACTIVE) {
-            audioSource.PlayOneShot(activeAC, 0.5f);
+            audioSource.PlayOneShot(activeAC, volume * 0.5f);
         } else if (!audioSource.isPlaying && state == State.IDLE) {
-            audioSource.PlayOneShot(idleAC, 0.2f);
+            audioSource.PlayOneShot(idleAC, volume * 0.2f);
         }
     }
 

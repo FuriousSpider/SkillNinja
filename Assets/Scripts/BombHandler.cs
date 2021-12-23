@@ -11,10 +11,12 @@ public class BombHandler : MonoBehaviour
 
     TimeManager timeManager;
     AudioSource audioSource;
+    float volume;
 
     // Start is called before the first frame update
     void Start()
     {
+        volume = PlayerPrefsHandler.GetSoundsVolume();
         audioSource = gameObject.AddComponent<AudioSource>();
         timeManager = new TimeManager(Values.ENEMY_BOMB_ACTIVE_TIME, Values.ENEMY_BOMB_ACTIVE_TIME);
         timeManager.Start();
@@ -27,13 +29,13 @@ public class BombHandler : MonoBehaviour
             Instantiate(explosionObject, gameObject.transform.position, Quaternion.identity);
             Destroy(gameObject);
         } else if (!audioSource.isPlaying) {
-            audioSource.PlayOneShot(fuseAC, 0.3f);
+            audioSource.PlayOneShot(fuseAC, volume * 0.3f);
         }
     }
 
     void OnTriggerEnter2D(Collider2D col) {
         if (col.gameObject.tag == Values.TAG_PLAYER) {
-            audioSource.PlayOneShot(defuseAC[Random.Range(0, defuseAC.Length - 1)], 1f);
+            audioSource.PlayOneShot(defuseAC[Random.Range(0, defuseAC.Length - 1)], volume * 1f);
             Destroy(gameObject, 0.1f);
         }
     }

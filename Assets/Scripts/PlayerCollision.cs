@@ -55,7 +55,8 @@ public class PlayerCollision : MonoBehaviour
         if (!IsPlayerDead()) {
             isPlayerDead = true;
             if (!audioSource.isPlaying) {
-                audioSource.PlayOneShot(audioClips[Random.Range(0, audioClips.Length - 1)], 0.5f);
+                float volume = PlayerPrefsHandler.GetSoundsVolume();
+                audioSource.PlayOneShot(audioClips[Random.Range(0, audioClips.Length - 1)], volume * 0.5f);
             }
             MenuHandler menuHandler = menu.GetComponent<MenuHandler>();
             menuHandler.Show();

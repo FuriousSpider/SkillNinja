@@ -9,7 +9,7 @@ public class MenuHandler : MonoBehaviour
 
     public Button startButton;
     public Image loadingCircle;
-    public Text startButtonText;
+    public TMPro.TextMeshProUGUI startButtonText;
 
     void Awake() {
         if (INSTANCE == null) {

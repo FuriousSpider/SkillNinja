@@ -11,8 +11,10 @@ public class DaggerHandler : MonoBehaviour
     AudioSource audioSource;
     GameObject target;
     State state;
+    float volume;
 
     void Start() {
+        volume = PlayerPrefsHandler.GetSoundsVolume();
         audioSource = gameObject.AddComponent<AudioSource>();
         state = State.IDLE;
     }
@@ -30,7 +32,7 @@ public class DaggerHandler : MonoBehaviour
         }
 
         if (state == State.ACTIVE && !audioSource.isPlaying) {
-            audioSource.PlayOneShot(audioClip, 0.5f);
+            audioSource.PlayOneShot(audioClip, volume * 0.5f);
         }
     }
 

@@ -15,7 +15,8 @@ public class BombExplosionHandler : MonoBehaviour
         audioSource = gameObject.AddComponent<AudioSource>();
         timeManager = new TimeManager(Values.ENEMY_BOMB_EXPLOSION_ACTIVE_TIME, Values.ENEMY_BOMB_EXPLOSION_ACTIVE_TIME);
         timeManager.Start();
-        audioSource.PlayOneShot(audioClips[Random.Range(0, audioClips.Length - 1)], 0.5f);
+        float volume = PlayerPrefsHandler.GetSoundsVolume();
+        audioSource.PlayOneShot(audioClips[Random.Range(0, audioClips.Length - 1)], volume * 0.5f);
     }
 
     // Update is called once per frame

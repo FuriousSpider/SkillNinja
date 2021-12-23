@@ -15,6 +15,7 @@ public class SoldierMovement : MonoBehaviour
     GameObject player;
     State state;
     TimeManager timeManager;
+    float volume;
 
     void Start()
     {
@@ -22,6 +23,7 @@ public class SoldierMovement : MonoBehaviour
         facingLeft = true;
         player = GameObject.FindGameObjectsWithTag(Values.TAG_PLAYER)[0];
         state = State.IDLE;
+        volume = PlayerPrefsHandler.GetSoundsVolume();
         timeManager = new TimeManager(Values.ENEMY_SOLDIER_IDLE_TIME, Values.ENEMY_SOLDIER_IDLE_TIME);
         timeManager.Start();
     }
@@ -41,9 +43,9 @@ public class SoldierMovement : MonoBehaviour
         }
 
         if (state == State.IDLE && !audioSource.isPlaying) {
-            audioSource.PlayOneShot(idleAC, 0.2f);
+            audioSource.PlayOneShot(idleAC, volume * 0.2f);
         } else if (state == State.ACTIVE && !audioSource.isPlaying) {
-            audioSource.PlayOneShot(movementAC[Random.Range(0, movementAC.Length - 1)], 0.2f);
+            audioSource.PlayOneShot(movementAC[Random.Range(0, movementAC.Length - 1)], volume * 0.2f);
         }
     }
 

@@ -7,7 +7,7 @@
    viewBox="0 0 264.58333 105.83334"
    version="1.1"
    id="svg2354"
-   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   inkscape:version="1.1.1 (eb90963e84, 2021-10-02)"
    sodipodi:docname="LabelBackground.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -25,13 +25,13 @@
      inkscape:document-units="mm"
      showgrid="false"
      units="px"
-     inkscape:zoom="0.37059484"
-     inkscape:cx="86.347668"
-     inkscape:cy="584.19594"
+     inkscape:zoom="0.18529742"
+     inkscape:cx="-24.285281"
+     inkscape:cy="855.38158"
      inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="1912"
-     inkscape:window-y="-8"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
@@ -57,7 +57,7 @@
        inkscape:collect="always"
        id="linearGradient5395">
       <stop
-         style="stop-color:#ffc300;stop-opacity:0.80000001"
+         style="stop-color:#fff9ff;stop-opacity:0.80000001"
          offset="0"
          id="stop5391" />
       <stop

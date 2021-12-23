@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1e3"
+   height="500"
+   version="1.1"
+   viewBox="0 0 264.58 132.29"
+   id="svg16"
+   sodipodi:docname="ButtonArrowHighlighted.svg"
+   inkscape:version="1.1.1 (eb90963e84, 2021-10-02)"
+   inkscape:export-filename="/home/furiousspider/Unity/Projects/SkillNinja/Assets/Resources/Button/ButtonArrow/ButtonArrow.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview18"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="0.90509668"
+     inkscape:cx="469.01067"
+     inkscape:cy="381.72718"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg16" />
+  <defs
+     id="defs12">
+    <linearGradient
+       id="linearGradient1185"
+       x1="73.058701"
+       x2="73.058701"
+       y1="128.62694"
+       y2="10.3728"
+       gradientTransform="matrix(1.0927809,0,0,1.2185512,-12.280559,-14.457658)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#f00"
+         offset="0"
+         id="stop2"
+         style="stop-color:#510700;stop-opacity:1" />
+      <stop
+         stop-color="#f00"
+         offset="0.55741322"
+         id="stop1373"
+         style="stop-color:#a71b00;stop-opacity:1" />
+      <stop
+         stop-color="#ffc600"
+         offset="1"
+         id="stop4"
+         style="stop-color:#510700;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient
+       id="radialGradient7120"
+       cx="132.28999"
+       cy="66.146004"
+       r="132.29"
+       gradientTransform="matrix(0.36378826,-0.88004651,2.0959225,0.94760697,-54.473901,119.8842)"
+       gradientUnits="userSpaceOnUse"
+       fx="132.28999"
+       fy="66.146004">
+      <stop
+         offset="0"
+         id="stop7" />
+      <stop
+         stop-color="#fff"
+         offset="1"
+         id="stop9" />
+    </radialGradient>
+  </defs>
+  <path
+     x="3.1833253"
+     y="3.183327"
+     width="258.21667"
+     height="125.92502"
+     d="M 19.508191,6.6328617 H 245.07185 A 12.87531,12.504044 0 0 1 257.94716,19.136907 V 113.15306 A 12.87531,12.504044 0 0 1 245.07185,125.6571 H 19.508191 A 12.87531,12.504044 0 0 1 6.6328817,113.15306 V 19.136907 A 12.87531,12.504044 0 0 1 19.508191,6.6328617 Z"
+     fill="url(#linearGradient1185)"
+     fill-rule="evenodd"
+     stroke="url(#radialGradient7120)"
+     stroke-width="6.3666"
+     style="fill:url(#linearGradient1185);stroke:url(#radialGradient7120);stroke-width:13.2658;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill"
+     id="path14"
+     inkscape:export-filename="/home/furiousspider/Unity/Projects/SkillNinja/Assets/Resources/Button/ButtonArrow/ButtonArrowHighlighted.png"
+     inkscape:export-xdpi="96"
+     inkscape:export-ydpi="96" />
+  <path
+     sodipodi:type="star"
+     style="fill:#ff8221;fill-opacity:1;stroke:#000000;stroke-linejoin:round;stroke-width:24.10696253;stroke-miterlimit:4;stroke-dasharray:none"
+     id="path3716"
+     inkscape:flatsided="false"
+     sodipodi:sides="3"
+     sodipodi:cx="177.05724"
+     sodipodi:cy="103.84768"
+     sodipodi:r1="287.95972"
+     sodipodi:r2="143.97987"
+     sodipodi:arg1="0.52359878"
+     sodipodi:arg2="1.5707963"
+     inkscape:rounded="0"
+     inkscape:randomized="0"
+     d="m 426.43767,247.82754 -249.38043,1e-5 -249.380435,-1e-5 L 52.367006,31.857746 177.05724,-184.11204 301.74746,31.857739 Z"
+     transform="matrix(0.28639648,0,0,0.10767164,81.581431,62.71482)"
+     inkscape:transform-center-y="-7.7512735"
+     inkscape:transform-center-x="2.2991619e-06" />
+</svg>

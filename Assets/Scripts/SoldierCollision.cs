@@ -8,10 +8,12 @@ public class SoldierCollision : MonoBehaviour
 
     AudioSource audioSource;
     int numberOfLives;
+    float volume;
 
     void Start() {
         audioSource = gameObject.AddComponent<AudioSource>();
         numberOfLives = Values.ENEMY_SOLDIER_NUMBER_OF_LIVES;
+        volume = PlayerPrefsHandler.GetSoundsVolume();
     }
 
     void OnTriggerEnter2D(Collider2D col) {
@@ -29,7 +31,7 @@ public class SoldierCollision : MonoBehaviour
             numberOfLives--;
             Destroy(col.gameObject);
             if (numberOfLives <= 0) {
-                audioSource.PlayOneShot(audioClips[Random.Range(0, audioClips.Length - 1)], 0.5f);
+                audioSource.PlayOneShot(audioClips[Random.Range(0, audioClips.Length - 1)], volume * 0.5f);
                 Destroy(gameObject, 0.1f);
             }
         }

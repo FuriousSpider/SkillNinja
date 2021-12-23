@@ -12,12 +12,15 @@ public class SpikesHandler : MonoBehaviour
     public AudioClip activeAC;
     public AudioClip idleAC;
     public Animator animator;
+    float volume;
 
     // Start is called before the first frame update
     void Start()
     {
         audioSource = gameObject.AddComponent<AudioSource>();
         state = State.IDLE;
+        volume = PlayerPrefsHandler.GetSoundsVolume();
+
         timeManager = new TimeManager(Values.ENEMY_SPIKES_IDLE_TIME, Values.ENEMY_SPIKES_IDLE_TIME);
 
         timeManager.Start();
@@ -28,7 +31,7 @@ public class SpikesHandler : MonoBehaviour
     {
         if (state == State.IDLE && timeManager.HasIntervalPassed()) {
             audioSource.Stop();
-            audioSource.PlayOneShot(activeAC, 0.5f);
+            audioSource.PlayOneShot(activeAC, volume * 0.5f);
             state = State.ACTIVE;
 
             timeManager = new TimeManager(Values.ENEMY_SPIKES_ACTIVE_TIME, Values.ENEMY_SPIKES_ACTIVE_TIME);
@@ -40,7 +43,7 @@ public class SpikesHandler : MonoBehaviour
         }
 
         if (!audioSource.isPlaying && state == State.IDLE) {
-            audioSource.PlayOneShot(idleAC, 0.2f);
+            audioSource.PlayOneShot(idleAC, volume * 0.2f);
         }
     }
 
