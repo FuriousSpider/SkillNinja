@@ -11,6 +11,7 @@ public class AdsManager : MonoBehaviour
     private OnAdFinished onAdFinishedCallback;
 
     string adUnitId = "ca-app-pub-9343619959181571/4663722755";
+    bool isAdLoaded;
 
     void Awake() {
         if (INSTANCE == null) {
@@ -26,7 +27,8 @@ public class AdsManager : MonoBehaviour
     {
         MobileAds.Initialize(initStatus => {});
         List<string> deviceIds = new List<string>();
-        deviceIds.Add("2A3072970F8725C49C54B297C230BD9A");
+        deviceIds.Add("9680131D0DE8F3455E4DA194E011CA51");
+        
         RequestConfiguration requestConfiguration = new RequestConfiguration
             .Builder()
             .SetTestDeviceIds(deviceIds)
@@ -38,10 +40,12 @@ public class AdsManager : MonoBehaviour
         this.interstitial.OnAdLoaded += HandleOnAdLoaded;
         this.interstitial.OnAdFailedToLoad += HandleOnAdFailedToLoad;
         this.interstitial.OnAdOpening += HandleOnAdOpened;
+
+        CreateAdRequestAndLoad();
     }
 
-    private AdRequest CreateAdRequest() {
-        return new AdRequest.Builder().Build();
+    private void CreateAdRequestAndLoad() {
+        this.interstitial.LoadAd(new AdRequest.Builder().Build());
     }
 
     public void CreateInterstitialAd() {
@@ -50,18 +54,27 @@ public class AdsManager : MonoBehaviour
         }
 
         this.interstitial = new InterstitialAd(adUnitId);
+        isAdLoaded = false;
     }
 
     public void ShowInterstitialAd() {
-        this.interstitial.LoadAd(this.CreateAdRequest());
+        if (isAdLoaded) {
+            this.interstitial.Show();
+        } else {
+            this.CreateAdRequestAndLoad();
+            this.onAdFinishedCallback();
+        }
+        // this.interstitial.LoadAd(this.CreateAdRequest());
     }
 
     public void HandleOnAdLoaded(object sender, System.EventArgs args) {
-        this.interstitial.Show();
+        isAdLoaded = true;
+        // this.interstitial.Show();
     }
 
     public void HandleOnAdFailedToLoad(object sender, AdFailedToLoadEventArgs args) {
-        this.onAdFinishedCallback();
+        isAdLoaded = false;
+        // this.onAdFinishedCallback();
     }
 
     public void HandleOnAdOpened(object sender, System.EventArgs args) {
@@ -70,6 +83,8 @@ public class AdsManager : MonoBehaviour
 
     public void SetOnAdFinishedListener(OnAdFinished callback) {
         this.onAdFinishedCallback = callback;
+        isAdLoaded = false;
+        this.CreateAdRequestAndLoad();
     }
 
     public delegate void OnAdFinished();
